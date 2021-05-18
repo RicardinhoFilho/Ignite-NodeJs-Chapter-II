@@ -1,11 +1,11 @@
-import { CategoryRepository } from "../repositories/CategoryRepository";
+import { CategoryRepository } from "../../repositories/CategoryRepository";
 
 interface IRequest {
   description: string;
   name: string;
 }
 
-export class CreateCategoryService {
+export class CreateCategoryUseCase {
     
     constructor(private categoryRepository: CategoryRepository){
     }
