@@ -1,11 +1,11 @@
-import { ISpecificationsRepository } from "../repositories/ISpecificationRepository";
+import { ISpecificationsRepository } from "../../repositories/interfaces/ISpecificationRepository";
 
 interface IRequest {
   name: string;
   description: string;
 }
 
-export class CreateSpacificationService {
+export class CreateSpacificationUseCase {
   constructor(private specificationRepository: ISpecificationsRepository) {}
 
   execute({ name, description }: IRequest): void {
